@@ -1,0 +1,24 @@
+set(PUBLIC_HEADERS
+	cookie.h
+	cookie_date.h
+	cookie_datetime.h
+	cookie_time.h
+	curl_config.h
+	curl_cookie.h
+	curl_easy.h
+	curl_easy_info.h
+	curl_exception.h
+	curl_form.h
+	curl_global.h
+	curl_header.h
+	curl_info.h
+	curl_interface.h
+	curl_ios.h
+	curl_multi.h
+	curl_option.h
+	curl_pair.h
+	curl_receiver.h
+	curl_sender.h
+	curl_share.h
+	curl_utility.h
+)
