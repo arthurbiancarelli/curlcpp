@@ -12,7 +12,7 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
 endif()
 
 # Checking for dependencies
-find_package(libcurl ${CURL_MIN_VERSION} REQUIRED)
+find_package(CURL ${CURL_MIN_VERSION} REQUIRED)
 
 
 # Set up source directories
@@ -26,7 +26,7 @@ include_directories(
 )
 
 add_library(${PROJECT_NAME} ${CURLCPP_SOURCE} ${PUBLIC_HEADERS})
-target_link_libraries(${PROJECT_NAME} libcurl::libcurl)
+target_link_libraries(${PROJECT_NAME} CURL::libcurl)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES CXX_STANDARD 11
 				  CXX_STANDARD_REQUIRED ON
